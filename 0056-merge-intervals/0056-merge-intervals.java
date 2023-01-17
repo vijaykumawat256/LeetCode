@@ -12,10 +12,10 @@ class Solution {
     
     public int[][] merge(int[][] intervals) {
         
-        System.out.println(Arrays.toString(intervals[0]));
+        //System.out.println(Arrays.toString(intervals[0]));
         
         Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
-        System.out.println(Arrays.toString(intervals[0]));
+        //System.out.println(Arrays.toString(intervals[0]));
         
         List<int[]> newArr = new ArrayList<>();
         for(int i=0;i<intervals.length;i++){
