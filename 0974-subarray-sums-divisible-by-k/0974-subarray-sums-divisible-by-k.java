@@ -3,7 +3,7 @@ class Solution {
         int[] counting = new int[k];
         for (int i = 0; i < nums.length; i++) {
             if (i > 0) nums[i] += nums[i - 1];
-            counting[(nums[i] % k + k) % k]++;
+            counting[(nums[i]%k + k) % k]++;
         }
         int result = counting[0];
         for (int frequency : counting)
