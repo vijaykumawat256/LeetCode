@@ -10,7 +10,7 @@ class Solution {
             }
             for(int j=0;j<n;j++){
                 
-                if(j==i|| j ==Math.abs(n-i-1)){
+                if(j==i|| j ==n-i-1){
                     continue;
                 }
                 
