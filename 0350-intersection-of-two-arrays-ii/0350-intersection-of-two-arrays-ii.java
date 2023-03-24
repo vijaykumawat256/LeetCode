@@ -14,7 +14,8 @@ class Solution {
                 j++;
             }
             else{
-                nums1[k++]=nums1[i++];
+                nums1[k++]=nums1[i];
+                i++;
                 j++;
             }
         }
