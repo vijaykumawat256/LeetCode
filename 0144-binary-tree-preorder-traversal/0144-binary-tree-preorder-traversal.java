@@ -14,23 +14,18 @@
  * }
  */
 class Solution {
-    
-    
-    private List<Integer> answer = new ArrayList<>();
-    private void dfs(TreeNode node){
-        if(node==null){
-            return;
-            }
-
-        answer.add(node.val);
-        dfs(node.left);
-        dfs(node.right);
-        }
     public List<Integer> preorderTraversal(TreeNode root) {
-        dfs(root);
-        return answer;
         
-
-        
+        List<Integer> res = new ArrayList<>();
+        preorder(root,res);
+        return res;
+    }
+    
+    public void preorder(TreeNode root, List<Integer> res){
+        if(root!=null){
+            res.add(root.val);
+            preorder(root.left,res);
+            preorder(root.right,res);
+        }
     }
 }
